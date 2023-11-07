@@ -2,8 +2,11 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-import glob
 import os
+
+directory = 'C:\Users\User\Desktop\Study\Sem 4\Python Programming Sir Sabri\MK10'
+txt_files = [f for f in os.listdir(directory) if f.endswith('.txt')]
+print(txt_files)
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
